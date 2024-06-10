@@ -90,7 +90,7 @@ iframe {
     border-radius: var(--radius);
     border: 0;
     border-top: 3px solid transparent;
-    filter: drop-shadow(0 5px 10px var(--grayish-blue));
+    filter: drop-shadow(0 10px 10px var(--grayish-blue));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
