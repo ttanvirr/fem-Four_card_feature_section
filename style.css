@@ -1,0 +1,132 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+
+    --ff-body: "Poppins", sans-serif;
+    --fs-body: 15px;
+
+    --radius: 0.4rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    color: var(--grayish-blue);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+@media (min-width: 1068px) {
+    main {
+        max-width: 1200px;
+    }
+}
+
+img,
+video,
+iframe {
+    max-inline-size: 100%;
+    block-size: auto;
+    display: block;
+}
+
+.section-title {
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.section-subtitle {
+    font-size: 2rem;
+    margin-block-end: 1rem;
+}
+
+.section-subtitle,
+.feature-card-title {
+    color: var(--very-dark-blue);
+}
+
+.feature-header {
+    text-align: center;
+    max-width: 79ch;
+    margin: 0 auto 4rem;
+}
+
+.feature-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+@media (min-width: 1068px) {
+    .feature-body {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.feature-card {
+    height: 250px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 0;
+    border-top: 3px solid transparent;
+    filter: drop-shadow(0 5px 10px var(--grayish-blue));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card-title {
+    margin-block-end: 0.5rem;
+}
+
+.feature-card .icon {
+    margin-left: auto;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1 1 100%;
+}
+
+.feature-card.card-one {
+    border-color: var(--cyan);
+}
+
+.feature-card.card-two {
+    border-color: var(--red);
+}
+
+.feature-card.card-three {
+    border-color: var(--orange);
+}
+
+.feature-card.card-four {
+    border-color: var(--blue);
+}
+
+.feature-card-title {
+    font-weight: 600;
+}
